@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SPD Solutions catalog administration portal">
+  <title>SPD Admin Portal v2</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="SPD Admin Portal home">
+      <span class="brand-mark">SPD</span>
+      <span><strong>SPD Admin Portal</strong><small>Catalog management</small></span>
+    </a>
+    <div class="topbar-right">
+      <span class="environment">INITIAL SETUP</span>
+      <span class="avatar" aria-label="Not signed in">?</span>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="welcome">
+      <div>
+        <p class="eyebrow">SPD SOLUTIONS</p>
+        <h1>Catalog administration</h1>
+        <p class="muted">Manage hospital organizations and their product catalogs.</p>
+      </div>
+      <div class="status-pill"><span></span> Backend not connected</div>
+    </section>
+
+    <section class="notice" role="status">
+      <strong>Setup preview</strong>
+      <p>This is the initial GitHub Pages interface. Authentication, organization data,
+        uploads and catalog publishing will be connected to the Cloudflare Worker and D1/R2
+        services in a later milestone. No credentials are stored in this website.</p>
+    </section>
+
+    <section class="stats" aria-label="Portal overview">
+      <article class="stat-card"><span>Organizations</span><strong>—</strong><small>Backend connection pending</small></article>
+      <article class="stat-card"><span>Published catalogs</span><strong>—</strong><small>Backend connection pending</small></article>
+      <article class="stat-card"><span>Activated devices</span><strong>—</strong><small>Backend connection pending</small></article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-heading">
+        <div><h2>Organizations</h2><p class="muted">Hospital accounts will appear here.</p></div>
+        <button class="button" id="add-org" type="button" disabled title="Available after backend setup">Add organization</button>
+      </div>
+      <div class="empty-state">
+        <div class="empty-icon" aria-hidden="true">＋</div>
+        <h3>No organizations connected</h3>
+        <p>After the Cloudflare backend is configured, you can create MCG as the first organization.</p>
+      </div>
+    </section>
+
+    <section class="quick-grid">
+      <article class="quick-card"><div class="quick-icon">↑</div><h3>Upload catalog</h3><p>Validate and publish a hospital's CSV catalog.</p><span class="coming-soon">Coming in a later milestone</span></article>
+      <article class="quick-card"><div class="quick-icon">◷</div><h3>Catalog history</h3><p>Review previous versions and restore a catalog.</p><span class="coming-soon">Coming in a later milestone</span></article>
+      <article class="quick-card"><div class="quick-icon">▦</div><h3>QR activation</h3><p>Generate a permanent organization setup QR code.</p><span class="coming-soon">Coming in a later milestone</span></article>
+    </section>
+    <footer>SPD Admin Portal v2 · Initial interface scaffold</footer>
+  </main>
+</body>
+</html>
